@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import HeadScreen from './Component/Head/HeadScreen';
+import ReviewScreen2 from './Component/Review/ReviewScreen2';
+import ReviewScreen1 from './Component/Review/ReviewScreen1';
+import AboutScreen from './Component/About/AboutScreen';
+import ContactUsScreen from './Component/ContactUs/ContactUsScreen';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1 className='text-xl'>Hello Tailwind with CSS</h1> */}
+      <HeadScreen />
+      <ReviewScreen1 />
+      <ReviewScreen2 />
+      <AboutScreen />
+      <ContactUsScreen />
     </div>
   );
 }
